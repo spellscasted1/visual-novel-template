@@ -6,7 +6,6 @@ namespace Data
     [CreateAssetMenu(fileName = "New Branch", menuName = "Branch")]
     public class Branch : ScriptableObject
     {
-        [SerializeField] private List<Sentence> sentences;
-    
+        [field: SerializeField] public List<Sentence> Sentences {get; private set;}
     }
 }

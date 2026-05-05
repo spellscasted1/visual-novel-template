@@ -5,8 +5,8 @@ using Views;
 
 namespace Data
 {
-    [CreateAssetMenu(menuName = "Sentences/Sentence"), Serializable]
-    public class Sentence : ScriptableObject
+    [Serializable]
+    public class Sentence
     {
         public enum SentenceTypes
         {
@@ -18,18 +18,18 @@ namespace Data
         [field: SerializeField] public SentenceTypes SentenceType {get; private set;}
         [field: SerializeField] public string SpeakerName {get; private set;}
         [field: SerializeField] public string Text { get ; private set ; }
+        [field: SerializeField] public Sprite BackgroundSprite { get ; private set ; }
         [field: SerializeField] public List<CharacterDisplayData> Characters { get; private set; }
-        [SerializeField] private bool previousCharacterViewData;
-        public event Action OnSentenceSpeaked;
+        public event Action OnSentenceSpoken;
 
         public virtual void SpeakSentence()
         {
-            OnSentenceSpeaked?.Invoke();
+            OnSentenceSpoken?.Invoke();
         }
 
-        public SentenceDisplayData GetDisplayData(string text, string speakerName, SentenceTypes sentenceType)
+        public SentenceDisplayData GetDisplayData()
         {
-            return new SentenceDisplayData(text, sentenceType, speakerName);
+            return new SentenceDisplayData(Text, SentenceType, SpeakerName);
         }
     }
 
@@ -73,7 +73,7 @@ namespace Data
     {
         [field: SerializeField] public Sprite Sprite { get; private set; }
         [field: SerializeField] public Vector2 Position { get; private set; }
-        [field: SerializeField] public CharacterView CharacterPrefab { get; private set; }
+      
     }
     
 }

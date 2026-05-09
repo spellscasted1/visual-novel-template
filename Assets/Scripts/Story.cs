@@ -24,6 +24,7 @@ public class Story : MonoBehaviour
 
    private void Start()
    {
+      Debug.Log(CurrentSentenceIndex);
       StepToSentence(0, false);
    }
 

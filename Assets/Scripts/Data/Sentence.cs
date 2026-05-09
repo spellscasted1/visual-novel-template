@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Views;
 
 namespace Data
@@ -20,6 +21,7 @@ namespace Data
         [field: SerializeField] public string Text { get ; private set ; }
         [field: SerializeField] public Sprite BackgroundSprite { get ; private set ; }
         [field: SerializeField] public List<CharacterDisplayData> Characters { get; private set; }
+        [field: SerializeField] public Choice Choice { get; private set; }
         public event Action OnSentenceSpoken;
 
         public virtual void SpeakSentence()

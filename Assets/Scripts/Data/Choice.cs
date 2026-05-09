@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Data
 {
@@ -15,10 +16,19 @@ namespace Data
     {
         [field: SerializeField] public string Name { get; private set; }
         [field: SerializeField] public Branch Branch { get; private set; }
+        
 
-        public virtual void Choiced()
+        public virtual void Choose(Story story)
         {
             Debug.Log($"Choiced on {Name}");
+            if (Branch != null)
+            {
+                story.SwitchBranch(Branch);
+            }
+            else
+            {
+                story.StepToSentence(true);
+            }
         }
     }
 }

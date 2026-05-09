@@ -1,9 +1,6 @@
-using System;
 using System.Collections.Generic;
 using Data;
 using UnityEngine;
-using UnityEngine.Serialization;
-using UnityEngine.TextCore.Text;
 using Zenject;
 
 namespace Views
@@ -22,15 +19,21 @@ namespace Views
             _sentenceWindow = sentenceWindow;
         }
         
-        public void DisplaySentence(Sentence sentence)
+        public void DisplaySentence(Sentence sentence) 
         {
+
+            _sentenceWindow.gameObject.SetActive(true);
             _sentenceWindow.DisplaySentence(sentence.GetDisplayData());
             DisplayCharacters(sentence.Characters);
         }
 
+        public void HideSentenceWindow()
+        {
+            _sentenceWindow.gameObject.SetActive(false);
+        }
+        
         private void DisplayCharacters(List<CharacterDisplayData> charactersData)
         {
-            if(charactersData.Count <= 0) return;
             foreach (Transform child in charactersContainer) if(child != null) Destroy(child.gameObject);
             foreach (var character in charactersData)
             {

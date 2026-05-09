@@ -18,6 +18,7 @@ public class SentenceWindow : MonoBehaviour
     
     public void NextSentence()
     {
-        _story.StepToSentence(_story.CurrentSentenceIndex + 1); 
+        _story.StepToSentence(_story.CurrentSentenceIndex + 1, false); 
     }
+    
 }

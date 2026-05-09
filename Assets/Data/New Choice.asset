@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a761fb3ef4cc41a397a9832ad28d64aa, type: 3}
   m_Name: New Choice
   m_EditorClassIdentifier: Assembly-CSharp::Data.Choice
-  <ChoiceVariants>k__BackingField: []
+  <ChoiceVariants>k__BackingField:
+  - <Name>k__BackingField: LOOL
+    <Branch>k__BackingField: {fileID: 0}
+  - <Name>k__BackingField: S
+    <Branch>k__BackingField: {fileID: 11400000, guid: 5737dd7fd738e3c9e9e9e08a3baa5a04, type: 2}

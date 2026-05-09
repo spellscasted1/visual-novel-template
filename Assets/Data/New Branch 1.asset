@@ -22,6 +22,7 @@ MonoBehaviour:
       <Position>k__BackingField: {x: 0, y: 0}
     - <Sprite>k__BackingField: {fileID: 2028242343, guid: 46b0f48137a5740abaa2ff1e788ea78f, type: 3}
       <Position>k__BackingField: {x: 3, y: 0}
+    <Choice>k__BackingField: {fileID: 0}
   - <SentenceType>k__BackingField: 0
     <SpeakerName>k__BackingField: DDSD
     <Text>k__BackingField: FUCK U NIGGA
@@ -31,3 +32,14 @@ MonoBehaviour:
       <Position>k__BackingField: {x: 0, y: 0}
     - <Sprite>k__BackingField: {fileID: 2028242343, guid: 46b0f48137a5740abaa2ff1e788ea78f, type: 3}
       <Position>k__BackingField: {x: 3, y: 0}
+    <Choice>k__BackingField: {fileID: 11400000, guid: b1ee5276ab4fdc9818ccfe07a2abd5d8, type: 2}
+  - <SentenceType>k__BackingField: 0
+    <SpeakerName>k__BackingField: DDSD
+    <Text>k__BackingField: FUCK U NIGGA
+    <BackgroundSprite>k__BackingField: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    <Characters>k__BackingField:
+    - <Sprite>k__BackingField: {fileID: -416656041, guid: 46b0f48137a5740abaa2ff1e788ea78f, type: 3}
+      <Position>k__BackingField: {x: 0, y: 0}
+    - <Sprite>k__BackingField: {fileID: 2028242343, guid: 46b0f48137a5740abaa2ff1e788ea78f, type: 3}
+      <Position>k__BackingField: {x: 3, y: 0}
+    <Choice>k__BackingField: {fileID: 0}
